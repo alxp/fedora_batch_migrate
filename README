@@ -10,7 +10,7 @@ Config file:
 
 Copy the file fedora_batch_migrate.cfg.example to fedora_batch_migrate.cfg and edit it to match the setup of the two repositories you wish to migrate objects between.
 
-The pids file is specified in the config file, by default the program looks for a file with the name "pids.txt". This file should contain a list of pids, one per line.
+The pids file is specified in the config file, by default the program looks for a file with the name "pids.txt". This file should contain a list of pids, one per line. Don't include the "info:fedora" prefix.
 
 You can override the values in the config file using command-line parameters. Run the command:
 
