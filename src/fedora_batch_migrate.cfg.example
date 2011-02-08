@@ -1,0 +1,17 @@
+[SourceRepository]
+sourceurl: http://remoreserver:8080/fedora
+sourceusername: fedoraAdmin
+sourcepassword: fedoraAdmin
+
+[TargetRepository]
+targeturl: http://localhost:8080/fedora
+targetusername: fedoraAdmin
+targetpassword: fedoraAdmin
+
+[Input]
+pidsfile: pids.txt
+
+[Logging]
+log_file: fedora_batch_migrate.log
+;Supported levels are DEBUG, INFO, WARNING, ERROR, CRITICAL
+log_level: INFO

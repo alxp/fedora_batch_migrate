@@ -1,0 +1,21 @@
+Fedora Batch Migrate
+
+Export a list of objects from one repository and import them directly into another.
+
+Requirements
+
+This script depends on the fcrepo Fedora Commons Python library.  Dependencies should be taken care of by running the setup.py script with the 'install' parameter.
+
+Config file:
+
+Copy the file fedora_batch_migrate.cfg.example to fedora_batch_migrate.cfg and edit it to match the setup of the two repositories you wish to migrate objects between.
+
+The pids file is specified in the config file, by default the program looks for a file with the name "pids.txt". This file should contain a list of pids, one per line.
+
+You can override the values in the config file using command-line parameters. Run the command:
+
+$ python fedora_batch_migrate.py --help
+
+For a description of the available command-line parameters.
+
+This script logs its actions to a file. Note that there is a bug in how the fcrepo library handles new object creation from FOXML files that can cause exceptions to be thrown with the error that an object already exists.  This doesn't seem to affect the actual ingest process so we log the error and just move on.

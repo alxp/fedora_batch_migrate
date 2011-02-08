@@ -1,0 +1,7 @@
+src/*.cfg
+*.log
+*.pyc
+.project
+.pydevproject
+dist
+*.egg-info
