@@ -1,5 +1,5 @@
 [SourceRepository]
-sourceurl: http://remoreserver:8080/fedora
+sourceurl: http://remoteserver:8080/fedora
 sourceusername: fedoraAdmin
 sourcepassword: fedoraAdmin
 
