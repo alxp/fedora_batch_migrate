@@ -14,6 +14,11 @@ from setuptools import setup, find_packages
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
+# Check minimum Python version
+from sys import version
+if version < '2.5.1':
+    raise Exception("This module requires Python version 2.5.1 or higher to run.")
+
 setup(name='fedora_batch_migrate',
       version='0.1',
       description='Fedora Batch Migrate',
