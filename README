@@ -3,19 +3,19 @@ Fedora Batch Migrate
 Export a list of objects from one repository and import them directly into another.
 
 Requirements
-=========
+============
 
 This script depends on the fcrepo Fedora Commons Python library.  Dependencies should be taken care of by running the setup.py script with the 'install' parameter.
 
 Installation
-=======
+============
 
 Run the setup.py script to install the script and its dependencies.
 
 $ python setup.py install
 
 Config file:
-========
+============
 
 Copy the file fedora_batch_migrate.cfg.example to fedora_batch_migrate.cfg and edit it to match the setup of the two repositories you wish to migrate objects between.
 
