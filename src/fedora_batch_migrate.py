@@ -58,7 +58,7 @@ if __name__ == '__main__':
             request2.headers['Content-Type'] = 'text/xml; charset=utf-8'
             response2 = request2.submit(foxml[39:])
         except fcrepo.connection.FedoraConnectionException as e:
-            logging.exception('FedoraConnectionException. ', e.value)
+            logging.exception('FedoraConnectionException. ')
              
         foxml = None
         response2 = None
